@@ -1,0 +1,27 @@
+<!ELEMENT carDealer (employees,cars,customers)>
+<!ELEMENT employees (employee+)>   <!-- start of the employee part -->
+<!ATTLIST employees xmlns:emp CDATA #REQUIRED>
+<!ELEMENT employee (emp:name, emp:birthDate, emp:mail, emp:dni, emp:tlf+, emp:car?)>
+<!ATTLIST employee id CDATA #REQUIRED>
+<!ELEMENT emp:name (#PCDATA)>
+<!ELEMENT emp:mail (#PCDATA)>
+<!ELEMENT emp:birthDate (#PCDATA)>
+<!ELEMENT emp:dni (#PCDATA)>
+<!ELEMENT emp:tlf (#PCDATA)>
+<!ELEMENT emp:car (#PCDATA)>
+<!ELEMENT cars (car+)>   <!-- start of the car part -->
+<!ATTLIST cars xmlns:car CDATA #REQUIRED>
+<!ELEMENT car (car:name, car:date,car:color, car:km)>
+<!ATTLIST car marca CDATA #REQUIRED>
+<!ELEMENT car:name (#PCDATA)>
+<!ELEMENT car:date (#PCDATA)>
+<!ELEMENT car:color (#PCDATA)>
+<!ELEMENT car:km (#PCDATA)>
+<!ELEMENT customers (customer*)>   <!-- start of the customer part -->
+<!ATTLIST customers xmlns:ctmr CDATA #REQUIRED>
+<!ELEMENT customer (ctmr:name, ctmr:birthDate, ctmr:mail?, ctmr:tlf+, ctmr:location)>
+<!ELEMENT ctmr:name (#PCDATA)>
+<!ELEMENT ctmr:birthDate (#PCDATA)>
+<!ELEMENT ctmr:mail (#PCDATA)>
+<!ELEMENT ctmr:tlf (#PCDATA)>
+<!ELEMENT ctmr:location (#PCDATA)>

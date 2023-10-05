@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE carDealer SYSTEM "p9.dtd">
+
+<carDealer >
+    <employees xmlns:emp = "https://www.carDealerEmployee.org">
+        <employee id="Carlos">
+            <emp:name>Carlos</emp:name>
+            <emp:birthDate>13/08/1989</emp:birthDate>
+            <emp:mail>Carlos1234@gmail.com</emp:mail>
+            <emp:dni>12345679P</emp:dni>
+            <emp:tlf>989765348</emp:tlf>
+            <emp:tlf>645765458</emp:tlf>
+            <emp:car>Mercedez</emp:car>
+        </employee>
+
+        <employee id="Maria">
+            <emp:name>Maria</emp:name>
+            <emp:birthDate>13/02/1999</emp:birthDate>
+            <emp:mail>MMariaaaa4@gmail.com</emp:mail>
+            <emp:dni>12323212L</emp:dni>
+            <emp:tlf>9897623233</emp:tlf>
+            <emp:car>BMW</emp:car>
+        </employee>
+
+        <employee id="Juan">
+            <emp:name>Juan</emp:name>
+            <emp:birthDate>06/03/2002</emp:birthDate>
+            <emp:mail>Juanitoooo34@gmail.com</emp:mail>
+            <emp:dni>13446792M</emp:dni>
+            <emp:tlf>6368839932</emp:tlf>
+        </employee>
+
+    </employees>
+    
+    <cars xmlns:car = "https://www.carDealerCar.org">
+        <car marca="Toyota">
+            <car:name>Yaris</car:name>
+            <car:date>06/2020</car:date>
+            <car:color>Rojo</car:color>
+            <car:km>10932</car:km>
+        </car>
+        <car marca="Kia">
+            <car:name>Rio</car:name>
+            <car:date>08/2023</car:date>
+            <car:color>Verde</car:color>
+            <car:km>2</car:km>
+        </car>
+        <car marca="Audi">
+            <car:name>A1</car:name>
+            <car:date>08/2022</car:date>
+            <car:color>Azul y Negro</car:color>
+            <car:km>1300</car:km>
+        </car>
+
+    </cars>
+
+    <customers xmlns:ctmr = "https://www.carDealerCustomer.org">
+        <customer >
+            <ctmr:name>Jesus</ctmr:name>
+            <ctmr:birthDate>07/02/1979</ctmr:birthDate>
+            <ctmr:mail>lelijesus@gmail.com</ctmr:mail>
+            <ctmr:tlf>923465348</ctmr:tlf>
+            <ctmr:location>Las Palmas de G. C.</ctmr:location>
+        </customer>
+
+        <customer >
+            <ctmr:name>Rosa</ctmr:name>
+            <ctmr:birthDate>28/11/1985</ctmr:birthDate>
+            <ctmr:tlf>6534652345</ctmr:tlf>
+            <ctmr:tlf>6276543243</ctmr:tlf>
+            <ctmr:location>Telde</ctmr:location>
+        </customer>
+
+    </customers>
+
+
+</carDealer>
